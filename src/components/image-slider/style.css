@@ -1,0 +1,64 @@
+.container {
+  position: relative;
+}
+
+.left-arrow,
+.right-arrow,
+.content {
+  position: absolute;
+  color: white;
+}
+.content {
+  top: 30%;
+  right: 5%;
+}
+
+.content h5 {
+  color: rgba(255, 255, 255, 1);
+  font-size: 60px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0px;
+  text-align: left;
+  line-height: 80px;
+  width: 69%;
+}
+
+.content button {
+  border: none;
+  border-bottom: 2px solid white;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 1);
+  font-size: 12px;
+  /* font-weight: 700; */
+  font-style: normal;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 20px;
+  text-transform: uppercase;
+  width: 25%;
+  outline: none;
+  cursor: pointer;
+}
+.left-arrow,
+.right-arrow {
+  top: 50%;
+  background-color: black;
+  opacity: 50%;
+  width: 50px;
+  border-radius: 50%;
+}
+.right-arrow {
+  padding: 15px;
+  right: -25px;
+}
+
+.left-arrow {
+  padding: 15px;
+  left: -25px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}

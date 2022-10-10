@@ -1,0 +1,20 @@
+.featured-cart img{
+width:240px;
+height: 390px;
+}
+
+.featured-cart{
+    width:240px
+}
+
+.featured-img{
+    position: relative;
+}
+
+.featured-img .new{
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: orangered;
+    color: white;
+}
