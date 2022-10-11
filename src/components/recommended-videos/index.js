@@ -1,7 +1,6 @@
 import RecommendedVideosItem from "./recommended-videos-item";
-import "./style.css";
-import Button from '../shared-components/button';
-
+import style from "./style.module.css";
+import Button from "../shared-components/button";
 
 const recommendedVideosData = [
   {
@@ -19,9 +18,9 @@ const recommendedVideosData = [
 ];
 const RecommendedVideos = () => {
   return (
-    <div className="recommended-videos">
+    <div className={style.container}>
       <h1>Recommended Videos</h1>
-      <div className="recommended-video-items">
+      <div className={style.recommendedVideo}>
         {recommendedVideosData.map((recommendedVideosdata) => {
           const { imageName, caption } = recommendedVideosdata;
           return (
@@ -32,7 +31,13 @@ const RecommendedVideos = () => {
         })}
       </div>
 
-      <Button backgroundColor="black" height="" width="130px" padding="2.5rem" buttonContent="SHOW MORE"/>
+      <Button
+        backgroundColor="black"
+        height=""
+        width="130px"
+        padding="2.5rem"
+        buttonContent="SHOW MORE"
+      />
     </div>
   );
 };

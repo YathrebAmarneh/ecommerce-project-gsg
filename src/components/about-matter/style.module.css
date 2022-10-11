@@ -1,5 +1,5 @@
 .container {
-  padding: 20px 100px;
+  padding: 20px 150px 20px 149px;
 }
 
 .content {
@@ -61,6 +61,7 @@
 }
 
 .container img {
-  width: 550px;
+  width: 555px;
   height: 430px;
+  padding-right: 5%;
 }

@@ -1,22 +1,19 @@
-.shop-image img{
-    width:250px;
-    height:400px
+.shop-image img {
+  width: 263px;
+  height: 400px;
 }
 
-.piece-name{
-    /* text-align: center; */
-    position: absolute;
-    top:290px;
-    background-color: white;
-    width:100%;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+.piece-name {
+  position: absolute;
+  top: 290px;
+  background-color: white;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.shop-image{
-    position: relative;
+.shop-image {
+  position: relative;
 }
-

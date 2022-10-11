@@ -1,7 +1,35 @@
 .container {
-  padding: 20px 100px;
+  padding: 20px 150px 20px 149px;
 }
 
+.content {
+  display: flex;
+  padding-top: 20px;
+}
+
+.shiftedElement {
+  width: 555px;
+  padding-right: 30px;
+}
+
+.shiftedElement img {
+  width: 555px;
+  height: 280px;
+  padding-top: 50px;
+}
+
+.fourItems div {
+  width: 263px;
+}
+.fourItems div img {
+  width: 263px;
+  height: 120px;
+}
+.fourItems {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
 h1 {
   color: rgba(51, 51, 58, 1);
   font-size: 42px;

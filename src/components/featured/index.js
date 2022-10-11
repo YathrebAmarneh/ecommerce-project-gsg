@@ -1,5 +1,6 @@
 import FeaturedCart from "../featured-cart";
-import "./style.css";
+import MainTitle from "../shared-components/main-title";
+import style from "./style.module.css";
 const featuredCarts = [
   {
     id: "1",
@@ -61,9 +62,9 @@ const featuredCarts = [
 
 const Featured = () => {
   return (
-    <div className="featured">
-      <h1>Featured</h1>
-      <div className="featured-images">
+    <div className={style.container}>
+      <MainTitle content="Featured" />
+      <div className={style.featuredImages}>
         {featuredCarts.map((feturedcart) => {
           const { id, brandNew, imageName, description, price } = feturedcart;
           return (

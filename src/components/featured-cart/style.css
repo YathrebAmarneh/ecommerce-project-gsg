@@ -1,20 +1,22 @@
-.featured-cart img{
-width:240px;
-height: 390px;
+.featured-cart img {
+  width: 240px;
+  height: 390px;
 }
 
-.featured-cart{
-    width:240px
+.featured-cart {
+  width: 263px;
 }
 
-.featured-img{
-    position: relative;
+.featured-img {
+  position: relative;
+  width: 263px;
+  height: 390px;
 }
 
-.featured-img .new{
-    position: absolute;
-    top:0;
-    left:0;
-    background-color: orangered;
-    color: white;
+.featured-img .new {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: orangered;
+  color: white;
 }

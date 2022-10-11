@@ -1,9 +1,10 @@
-import "./style.css"
+import style from "./style.module.css";
+import MainTitle from "../shared-components/main-title";
 
 const AsSoonOn = () => {
   return (
-    <div className="as-soon-on">
-      <h1 className="soon-title">As Soon On</h1>
+    <div className={style.container}>
+      <MainTitle content="As Soon On" />
       <img
         alt="as-soon-img"
         className="soon-img"

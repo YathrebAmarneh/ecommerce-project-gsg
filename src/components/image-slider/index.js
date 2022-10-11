@@ -1,11 +1,11 @@
-import { IconContext } from "react-icons";
-import "./style.css";
+import style from "./style.module.css";
 import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+
 const ImageSlider = () => {
   return (
-    <div className="container">
-      <div className="left-arrow">
+    <div className={style.container}>
+      <div className={style.leftArrow}>
         <MdOutlineKeyboardArrowLeft size="3rem" />
       </div>
 
@@ -14,12 +14,12 @@ const ImageSlider = () => {
         src="assets/images/c97458358789c033061390d08b4fdcf4e98893b0.png"
       />
 
-      <div className="content">
+      <div className={style.content}>
         <h5>Perfume Tips Tricks</h5>
         <button>SHOP NOW</button>
       </div>
 
-      <div className="right-arrow">
+      <div className={style.rightArrow}>
         <MdOutlineKeyboardArrowRight size="3rem" />
       </div>
     </div>

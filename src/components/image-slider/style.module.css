@@ -2,8 +2,11 @@
   position: relative;
 }
 
-.left-arrow,
-.right-arrow,
+.container img {
+  width: 100vw;
+}
+.leftArrow,
+.rightArrow,
 .content {
   position: absolute;
   color: white;
@@ -30,7 +33,6 @@
   background-color: transparent;
   color: rgba(255, 255, 255, 1);
   font-size: 12px;
-  /* font-weight: 700; */
   font-style: normal;
   letter-spacing: 2px;
   text-align: center;
@@ -40,20 +42,20 @@
   outline: none;
   cursor: pointer;
 }
-.left-arrow,
-.right-arrow {
+.leftArrow,
+.rightArrow {
   top: 50%;
   background-color: black;
   opacity: 50%;
   width: 50px;
   border-radius: 50%;
 }
-.right-arrow {
+.rightArrow {
   padding: 15px;
   right: -25px;
 }
 
-.left-arrow {
+.leftArrow {
   padding: 15px;
   left: -25px;
 }
