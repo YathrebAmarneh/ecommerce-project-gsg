@@ -12,10 +12,13 @@ const Navbar = () => {
         <NavigationLinks />
       </div>
       <div className="right-navbar">
-        <a href="#login"> LOGIN</a>
-        <FiSearch />
-        <AiOutlineHeart />
-        <AiOutlineLock />
+        <a href="#login" className="login">
+          {" "}
+          LOGIN
+        </a>
+        <FiSearch className="search" />
+        <AiOutlineHeart className="heart" />
+        <AiOutlineLock className="lineLock" />
       </div>
     </div>
   );

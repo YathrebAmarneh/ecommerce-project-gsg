@@ -17,3 +17,21 @@
 .shop-image {
   position: relative;
 }
+
+/* responsive responsive responsive responsive */
+@media only screen and (max-width: 375px) {
+  .shop-image img {
+    width: 115%;
+  }
+
+  .piece-name {
+    position: absolute;
+    top: 290px;
+    background-color: white;
+    width: 115%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

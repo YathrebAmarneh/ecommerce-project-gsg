@@ -1,8 +1,12 @@
-import "./style.css"
+import "./style.css";
+
 const Sale = () => {
   return (
-    <div className="sale-container">Free shipping for orders above USD 150</div>
-  )
-}
+    <div className="sale-container">
+      {" "}
+      <p>Free shipping for orders above USD 150</p>
+    </div>
+  );
+};
 
-export default Sale
+export default Sale;

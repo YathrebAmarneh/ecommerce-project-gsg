@@ -7,7 +7,7 @@ const AsSoonOn = () => {
       <MainTitle content="As Soon On" />
       <img
         alt="as-soon-img"
-        className="soon-img"
+        className={style.image}
         src="assets/images/07cd3f1fa1b05fc98036589db10782d230e394f7.png"
       />
     </div>

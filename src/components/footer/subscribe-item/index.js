@@ -1,23 +1,21 @@
 import { SiFacebook } from "react-icons/si";
 import { AiFillTwitterCircle } from "react-icons/ai";
-import Button from "../../shared-components/button";
+import Btn from "../../shared-components/button";
+import style from "./style.module.css";
+
 const SubscribeItem = () => {
   return (
-    <div className="subscribe-item">
+    <div className={style.container}>
       <h5>Subscribe to newsletter</h5>
       <div>
-        <input placeholder="Enter your email" />
-        <Button
-          backgroundColor="red"
-          height="200px"
-          width="166"
-          padding="5"
-          buttonContent="SUBSCRIBE"
-        />
+        <div className={style.form}>
+          <input placeholder="Enter your email" />
+          <Btn buttonContent="SUBSCRIBE" className="subscribeButton" />
+        </div>
 
-        <div className="social-icons">
-          <SiFacebook className="facebook" />
-          <AiFillTwitterCircle />
+        <div className={style.socialIcons}>
+          <SiFacebook className={style.facebook} />
+          <AiFillTwitterCircle className={style.twitter} />
         </div>
       </div>
     </div>

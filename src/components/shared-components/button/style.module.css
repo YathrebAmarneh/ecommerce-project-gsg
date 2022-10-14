@@ -1,0 +1,68 @@
+.container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.subscribeButton {
+  width: 166px;
+  height: 40px;
+  color: rgba(51, 51, 58, 1);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.videosButton {
+  background-color: black;
+  color: white;
+  width: 130px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.exploreButton {
+  width: 174px;
+  color: rgba(255, 255, 255, 1);
+  background-color: black;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.quickView {
+  height: 50px;
+  width: 180px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: black;
+  color: rgba(255, 255, 255, 1);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 20px;
+}
+
+/* responsive responsive responsive responsive */
+@media only screen and (max-width: 375px) {
+  .subscribeButton {
+    margin-top: 20px;
+    width: 90%;
+  }
+
+  .exploreButton {
+    width: 100%;
+  }
+  .videosButton {
+    width: 100%;
+  }
+}

@@ -24,7 +24,6 @@ const Shop = () => {
   return (
     <div className="shop">
       <MainTitle content="Shop" />
-      {/* <h1>Shop</h1> */}
       <div className="shop-images">
         {shopData.map((shopdata) => {
           const { imagename, piecename } = shopdata;

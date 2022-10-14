@@ -1,6 +1,7 @@
 import RecommendedVideosItem from "./recommended-videos-item";
 import style from "./style.module.css";
 import Button from "../shared-components/button";
+import Btn from "../shared-components/button";
 
 const recommendedVideosData = [
   {
@@ -30,14 +31,9 @@ const RecommendedVideos = () => {
           );
         })}
       </div>
-
-      <Button
-        backgroundColor="black"
-        height=""
-        width="130px"
-        padding="2.5rem"
-        buttonContent="SHOW MORE"
-      />
+      <div className={style.videosButton}>
+        <Btn buttonContent="SHOW MORE" className="videosButton" />
+      </div>
     </div>
   );
 };

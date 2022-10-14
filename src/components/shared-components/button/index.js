@@ -1,8 +1,11 @@
+import style from "./style.module.css";
 
-const Button = ({backgroundColor,height,width,padding,buttonContent}) => {
+const Btn = ({ buttonContent, className }) => {
   return (
-    <button style={{backgroundColor:{backgroundColor},padding:{padding},width:{width},height:{height}}}>{buttonContent}</button>
-  )
-}
+    <button className={`${style.container} ${style[className]}`}>
+      {buttonContent}
+    </button>
+  );
+};
 
-export default Button
+export default Btn;

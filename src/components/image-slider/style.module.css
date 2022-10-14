@@ -1,7 +1,7 @@
 .container {
   position: relative;
+  overflow-x: hidden;
 }
-
 .container img {
   width: 100vw;
 }
@@ -21,8 +21,6 @@
   font-size: 60px;
   font-weight: 400;
   font-style: normal;
-  letter-spacing: 0px;
-  text-align: left;
   line-height: 80px;
   width: 69%;
 }
@@ -31,9 +29,8 @@
   border: none;
   border-bottom: 2px solid white;
   background-color: transparent;
-  color: rgba(255, 255, 255, 1);
+  color: white;
   font-size: 12px;
-  font-style: normal;
   letter-spacing: 2px;
   text-align: center;
   line-height: 20px;
@@ -44,23 +41,61 @@
 }
 .leftArrow,
 .rightArrow {
-  top: 50%;
+  top: 45%;
   background-color: black;
   opacity: 50%;
   width: 50px;
   border-radius: 50%;
+  padding: 15px;
 }
 .rightArrow {
-  padding: 15px;
   right: -25px;
 }
 
 .leftArrow {
-  padding: 15px;
   left: -25px;
 }
 
 .content {
   display: flex;
   flex-direction: column;
+}
+
+/* responsive responsive responsive responsive */
+@media only screen and (max-width: 375px) {
+  .content h5 {
+    font-size: 20px;
+    line-height: 20px;
+    width: 69%;
+  }
+
+  .content button {
+    font-size: 5px;
+    line-height: 20px;
+    width: 30%;
+  }
+
+  .leftArrow,
+  .rightArrow {
+    top: 35%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  .rightArrow {
+    right: -20px;
+    /* padding: 0 17px 0 5px; */
+    padding-top: 0px;
+    padding-right: 17px;
+    padding-left: 5px;
+  }
+
+  .leftArrow {
+    left: -20px;
+    padding-top: 0px;
+    padding-left: 17px;
+    padding-right: 5px;
+  }
 }

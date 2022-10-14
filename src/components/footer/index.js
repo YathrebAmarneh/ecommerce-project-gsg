@@ -1,4 +1,4 @@
-import "./style.css";
+import style from "./style.module.css";
 import FooterItem from "./footer-item";
 import SubscribeItem from "./subscribe-item";
 const footerData = [
@@ -32,12 +32,12 @@ const footerData = [
 ];
 const Footer = () => {
   return (
-    <div className="footer-container">
-      <div className="top-footer-container">
+    <div className={style.container}>
+      <div className={style.topFooter}>
         {footerData.map((footerdata) => {
           const { id, title, content } = footerdata;
           return (
-            <div className="footer-data">
+            <div className={style.footerData}>
               <FooterItem key={id} id={id} title={title} content={content} />
             </div>
           );
@@ -45,7 +45,9 @@ const Footer = () => {
         <SubscribeItem />
       </div>
 
-      <p style={{textAlign:"center"}}>&copy; Copyright Matter PTE LTD 2017</p>
+      <p style={{ textAlign: "center" }}>
+        &copy; Copyright Matter PTE LTD 2017
+      </p>
     </div>
   );
 };

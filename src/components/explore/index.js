@@ -1,5 +1,8 @@
 import ExploreItem from "./explore-item";
 import style from "./style.module.css";
+import MainTitle from "../shared-components/main-title";
+import Btn from "../shared-components/button";
+
 const Explore = () => {
   const exploreItems = [
     {
@@ -55,7 +58,7 @@ const Explore = () => {
   const shiftedElement = exploreItems.shift();
   return (
     <div className={style.container}>
-      <h1>Explore</h1>
+      <MainTitle content="Explore" />
       <div className={style.content}>
         <div className={style.shiftedElement}>
           <ExploreItem {...shiftedElement} />
@@ -78,6 +81,9 @@ const Explore = () => {
             );
           })}
         </div>
+      </div>
+      <div className={style.exploreButton}>
+        <Btn buttonContent="See the journal" className="exploreButton" />
       </div>
     </div>
   );

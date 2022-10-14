@@ -1,9 +1,10 @@
 import style from "./style.module.css";
+import MainTitle from "../shared-components/main-title";
 
 const AboutMatter = () => {
   return (
     <div className={style.container}>
-      <h1>About Matter</h1>
+      <MainTitle content="About Matter" />
       <div className={style.content}>
         <img
           alt="about-matter"

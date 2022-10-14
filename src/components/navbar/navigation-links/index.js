@@ -11,7 +11,8 @@ const NavigationLinks = () => {
             <a href={`#${item.toLowerCase()}`}>
               {item}
               <IoIosArrowDown
-                style={{ position: "absolute", top: "10px", right: "-20px" }}
+                className="IoIosArrowDown"
+                // style={{ position: "absolute", top: "10px", right: "-20px" }}
               />
             </a>
           </>
