@@ -1,10 +1,10 @@
-import "./style.css";
-
 import { IoIosArrowDown } from "react-icons/io";
+import style from "./style.module.css";
+
 const NavigationLinks = () => {
   const data = ["SHOP", "FABRIC", "JOURNAL", "ABOUT"];
   return (
-    <div className="navigation-links">
+    <div className={style.NavigationLinks}>
       {data.map((item) => {
         return (
           <>
