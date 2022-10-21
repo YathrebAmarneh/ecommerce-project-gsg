@@ -1,6 +1,7 @@
 import style from "./style.module.css";
 import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import Btn from "../shared-components/button";
 
 const ImageSlider = () => {
   return (
@@ -16,7 +17,7 @@ const ImageSlider = () => {
 
       <div className={style.content}>
         <h5>Perfume Tips Tricks</h5>
-        <button>SHOP NOW</button>
+        <Btn className="shopNowBtn" buttonContent="SHOP NOW" />
       </div>
 
       <div className={style.rightArrow}>

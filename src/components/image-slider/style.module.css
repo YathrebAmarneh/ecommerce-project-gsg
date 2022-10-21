@@ -25,20 +25,6 @@
   width: 69%;
 }
 
-.content button {
-  border: none;
-  border-bottom: 2px solid white;
-  background-color: transparent;
-  color: white;
-  font-size: 12px;
-  letter-spacing: 2px;
-  text-align: center;
-  line-height: 20px;
-  text-transform: uppercase;
-  width: 25%;
-  outline: none;
-  cursor: pointer;
-}
 .leftArrow,
 .rightArrow {
   top: 45%;
@@ -69,12 +55,6 @@
     width: 69%;
   }
 
-  .content button {
-    font-size: 5px;
-    line-height: 20px;
-    width: 30%;
-  }
-
   .leftArrow,
   .rightArrow {
     top: 35%;
@@ -86,7 +66,6 @@
   }
   .rightArrow {
     right: -20px;
-    /* padding: 0 17px 0 5px; */
     padding-top: 0px;
     padding-right: 17px;
     padding-left: 5px;
