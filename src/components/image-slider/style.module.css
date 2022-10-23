@@ -2,9 +2,9 @@
   position: relative;
   overflow-x: hidden;
 }
-.container img {
+/* .container img {
   width: 100vw;
-}
+} */
 .leftArrow,
 .rightArrow,
 .content {

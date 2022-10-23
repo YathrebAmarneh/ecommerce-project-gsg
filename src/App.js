@@ -12,6 +12,12 @@ import AsSoonOn from "./components/as-soon-on";
 import Footer from "./components/footer";
 import Explore from "./components/explore";
 
+const slides = [
+  { url: "c97458358789c033061390d08b4fdcf4e98893b0.png" },
+  { url: "066bc105c9c7c03204c1c306029ffa7dcc6a9203.png" },
+  { url: "3af295aa3c1881b822ecfea58c707e38b4931794.png" },
+];
+
 function App() {
   const [data, setData] = useState([]);
 
@@ -36,7 +42,7 @@ function App() {
     <>
       <Sale />
       <Navbar />
-      <ImageSlider />
+      <ImageSlider slides={slides} />
       <Featured data={data} />
       <AboutMatter />
       <Explore />
