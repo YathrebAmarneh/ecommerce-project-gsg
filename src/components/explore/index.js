@@ -65,18 +65,10 @@ const Explore = () => {
         </div>
         <div className={style.fourItems}>
           {exploreItems.map((exploreItem) => {
-            const {
-              id,
-              date,
-              headerTitle,
-              headerSize,
-              content,
-              imageName,
-              className,
-            } = exploreItem;
+            const { id } = exploreItem;
             return (
               <>
-                <ExploreItem {...exploreItem} />
+                <ExploreItem key={id} {...exploreItem} />
               </>
             );
           })}

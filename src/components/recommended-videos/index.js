@@ -2,6 +2,7 @@ import RecommendedVideosItem from "./recommended-videos-item";
 import style from "./style.module.css";
 import Button from "../shared-components/button";
 import Btn from "../shared-components/button";
+import MainTitle from "../shared-components/main-title";
 
 const recommendedVideosData = [
   {
@@ -20,13 +21,17 @@ const recommendedVideosData = [
 const RecommendedVideos = () => {
   return (
     <div className={style.container}>
-      <h1>Recommended Videos</h1>
+      <MainTitle content="Recommended Videos" />
       <div className={style.recommendedVideo}>
         {recommendedVideosData.map((recommendedVideosdata) => {
           const { imageName, caption } = recommendedVideosdata;
           return (
             <>
-              <RecommendedVideosItem imageName={imageName} caption={caption} />
+              <RecommendedVideosItem
+                key={Math.random()}
+                imageName={imageName}
+                caption={caption}
+              />
             </>
           );
         })}

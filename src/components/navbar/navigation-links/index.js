@@ -8,12 +8,9 @@ const NavigationLinks = () => {
       {data.map((item) => {
         return (
           <>
-            <a href={`#${item.toLowerCase()}`}>
+            <a key={Math.random()} href={`#${item.toLowerCase()}`}>
               {item}
-              <IoIosArrowDown
-                className="IoIosArrowDown"
-                // style={{ position: "absolute", top: "10px", right: "-20px" }}
-              />
+              <IoIosArrowDown className="IoIosArrowDown" />
             </a>
           </>
         );

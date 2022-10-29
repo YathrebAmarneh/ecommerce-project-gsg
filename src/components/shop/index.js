@@ -30,7 +30,11 @@ const Shop = () => {
 
           return (
             <>
-              <ShopItem imagename={imagename} piecename={piecename} />
+              <ShopItem
+                key={Math.random()}
+                imagename={imagename}
+                piecename={piecename}
+              />
             </>
           );
         })}

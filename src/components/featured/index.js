@@ -66,9 +66,10 @@ const Featured = ({ data }) => {
       <MainTitle content="Featured" />
       <div className={style.featuredImages}>
         {data.products.map((productItem) => {
+          const { id } = productItem;
           return (
             <>
-              <FeaturedCart {...productItem} />
+              <FeaturedCart key={id} {...productItem} />
             </>
           );
         })}
